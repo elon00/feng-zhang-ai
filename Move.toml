@@ -1,0 +1,9 @@
+[package]
+name = "feng_zhang_ai"
+version = "1.0.0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet" }
+
+[addresses]
+feng_zhang_ai = "0x0"

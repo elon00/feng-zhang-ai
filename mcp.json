@@ -1,0 +1,57 @@
+{
+  "mcpServers": {
+    "feng-zhang-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "TITAN_PROTOCOL": "ZHANG",
+        "TARGET_CHAIN": "Sui",
+        "FIPS_203_LEVEL": "ML-KEM-768",
+        "FIPS_204_LEVEL": "ML-DSA-65"
+      },
+      "tools": [
+        {
+          "name": "verify_feng_zhang_discovery",
+          "description": "Verifies core invariant principles: Adapted CRISPR-Cas9 for mammalian genome editing; discovered Cas12 and Cas13 systems",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "input_data": {
+                "type": "string"
+              },
+              "precision_level": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "input_data"
+            ]
+          }
+        },
+        {
+          "name": "model_feng_zhang_telemetry",
+          "description": "Models high-assurance domain telemetry for Molecular Biology & Bioengineering",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "telemetry_vector": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "required": [
+              "telemetry_vector"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
